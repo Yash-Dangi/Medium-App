@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useBlog } from "../Hooks"
 import { FullBlog } from "../components/FullBlog";
-import { BlogSkelton } from "../components/BlogSkeleton";
 
 export default function Blog(){
       const {id}  = useParams();

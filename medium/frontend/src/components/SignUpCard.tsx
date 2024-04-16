@@ -1,4 +1,4 @@
-import { Button } from "./Button"
+
 import { SignupCardTop } from "./SignupCardTop"
 import {useNavigate} from 'react-router-dom'
 import { ChangeEvent, useState } from "react";
@@ -49,7 +49,9 @@ export const SignupCard = () => {
                      });
                  }}></InputComponenet>
                   </div>
-                  <Button label = {'Sign Up'} onClick={sendRequest}> </Button>
+                  <div className="w-full">
+                <button onClick = {sendRequest} type="button" className="w-full text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Sign Up</button>
+                </div>
               </div>
          </div>
       )

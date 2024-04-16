@@ -1,4 +1,4 @@
-import { MouseEventHandler } from "react";
+
 
 interface MyComponentProps{
     label : string;

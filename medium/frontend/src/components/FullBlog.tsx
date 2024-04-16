@@ -1,7 +1,7 @@
 import { Appbar } from "./AppBar";
 import { Avatar } from "./BlogCard";
 
-interface MyComponentProps{
+export interface MyComponentProps{
      title : string;
      content  : string;
      authorName : string;
