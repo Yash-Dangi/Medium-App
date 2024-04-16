@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useBlog } from "../Hooks"
 import { FullBlog } from "../components/FullBlog";
+import { Appbar } from "../components/AppBar";
+import { BlogSpinner } from "../components/BlogSpinner";
 
 export default function Blog(){
       const {id}  = useParams();
@@ -10,7 +12,8 @@ export default function Blog(){
       {
             return(
               <div>
-                loading
+                  <Appbar></Appbar>
+                  <BlogSpinner></BlogSpinner>
               </div>
             )     
       }
